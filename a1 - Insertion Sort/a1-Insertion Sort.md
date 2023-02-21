@@ -13,3 +13,7 @@ We start with __insertion sort__, which is an efficent algorithm for sorting a s
 
 Our pseudocode for insertion sort is presented as a procedure called __$INSERTION-SORT$__, which takes as a parameter an array $A[1..n]$ containing a sequence of length $n$ that is to be sorted. (In the code, the number $n$ of elements in $A$ is denoted by $length[A]$). The input numbers are __sorted in place__. The numbers are rearranged within the array $A$, with at most a constant number of them stored outside the array at any time. The input array $A$ contains the sorted output sequence when __$INSERTION-SORT$__ is finished.
 
+> Figure 1.1 - The operation of __Insertion Sort__ on the array $A = \langle 5, 2, 4, 6, 1, 3 \rangle$.
+<img align="left" src="https://github.com/romuro-pauliv/Algorithms/blob/main/a1%20-%20Insertion%20Sort/static/Insertion%20Sort.png?raw=true" alt="Insertion Sort" width="400"/>
+
+Array indices appear above the rectangles, and values stored in the array positions appear within the rectangles. (a)-(e) The iterations of the __for__ loop of lines 1-8. In each iteration, the black rectangle holds the key taken from $A[j]$, whitch is compared with the values in shaded rectangles to its left in the test of line 5. Shaded arrows show array values moved one position to the right in line 6, and black arrows indicate where the key moved to in line 8. (f) The final sorted array.
