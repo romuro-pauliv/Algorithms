@@ -17,3 +17,17 @@ Our pseudocode for insertion sort is presented as a procedure called __INSERTION
 <img align="left" src="https://github.com/romuro-pauliv/Algorithms/blob/main/a1%20-%20Insertion%20Sort/static/Insertion%20Sort.png?raw=true" alt="Insertion Sort" width="500"/>
 
 Array indices appear above the rectangles, and values stored in the array positions appear within the rectangles. __(a)-(e)__ The iterations of the __for__ loop of lines __1-8__. In each iteration, the black rectangle holds the key taken from $A[j]$, whitch is compared with the values in shaded rectangles to its left in the test of line 5. Shaded arrows show array values moved one position to the right in line 6, and black arrows indicate where the key moved to in line 8. __(f)__ The final sorted array.
+
+---
+
+__Insertion-Sort(A)__
+1&emsp;__for__ $j \leftarrow 2$ __to__ $length[A]$
+2&emsp;&emsp;__do__ $key \leftarrow A[j]$
+3&emsp;&emsp;&emsp;$\triangleright$ Insert $A[j]$ into the sorted sequence $A[1..j-1]$
+4&emsp;&emsp;&emsp;$i \leftarrow j - 1$
+5&emsp;&emsp;&emsp;__while__ $i > 0$ and $A[i] > key$
+6&emsp;&emsp;&emsp;&emsp;__do__ $A[i+1] \leftarrow A[i]$
+7&emsp;&emsp;&emsp;&emsp;&emsp;$i \leftarrow i - 1$
+8&emsp;&emsp;&emsp;$A[i + 1] \leftarrow key$
+
+---
