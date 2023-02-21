@@ -21,13 +21,13 @@ Array indices appear above the rectangles, and values stored in the array positi
 ---
 
 __Insertion-Sort(A)__
-1. &emsp;__for__ $j\leftarrow 2$ __to__ $length[A]$
-2. &emsp;&emsp;__do__ $key\leftarrow A[j]$
-3. &emsp;&emsp;&emsp;$\triangleright$ Insert $A[j]$ into the sorted sequence $A[1..j-1]$
-4. &emsp;&emsp;&emsp;$i\leftarrow j-1$
-5. &emsp;&emsp;&emsp;__while__ $i > 0$ and $A[i] > key$
-6. &emsp;&emsp;&emsp;&emsp;__do__ $A[i+1]\leftarrow A[i]$
-7. &emsp;&emsp;&emsp;&emsp;&emsp;$i\leftarrow i - 1$
-8. &emsp;&emsp;&emsp;$A[i + 1]\leftarrow key$
+1 &emsp;__for__ $j\leftarrow 2$ __to__ $length[A]$
+2 &emsp;&emsp;__do__ $key\leftarrow A[j]$
+3 &emsp;&emsp;&emsp;$\triangleright$ Insert $A[j]$ into the sorted sequence $A[1..j-1]$
+4 &emsp;&emsp;&emsp;$i\leftarrow j-1$
+5 &emsp;&emsp;&emsp;__while__ $i > 0$ and $A[i] > key$
+6 &emsp;&emsp;&emsp;&emsp;__do__ $A[i+1]\leftarrow A[i]$
+7 &emsp;&emsp;&emsp;&emsp;&emsp;$i\leftarrow i - 1$
+8 &emsp;&emsp;&emsp;$A[i + 1]\leftarrow key$
 
 ---
